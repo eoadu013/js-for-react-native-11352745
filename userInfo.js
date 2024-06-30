@@ -1,10 +1,10 @@
-// arrayManipulation.js
-function formatArrayStrings(strings, processedNumbers) {
-    return strings.map((str, index) => {
-        if (processedNumbers[index] % 2 === 0) {
-            return str.toUpperCase();
-        } else {
-            return str.toLowerCase();
-        }
+// userInfo.js
+function createUserProfiles(names, modifiedNames) {
+    return names.map((name, index) => {
+        return {
+            id: index + 1,
+            originalName: name,
+            modifiedName: modifiedNames[index]
+        };
     });
 }
